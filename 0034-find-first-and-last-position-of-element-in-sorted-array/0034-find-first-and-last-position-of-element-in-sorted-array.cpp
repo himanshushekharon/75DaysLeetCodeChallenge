@@ -2,9 +2,7 @@ class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
         int n=nums.size();
-        vector<int> v;
-        int fo=-1, lo=-1;
- 
+        int fo=-1,lo=-1;
         int l=0;
         int r=n-1;
         while(l<=r){
@@ -31,7 +29,6 @@ public:
                 l=mid+1;
             }
         }
-        
-        return {fo, lo};
+        return {fo,lo};
     }
 };
